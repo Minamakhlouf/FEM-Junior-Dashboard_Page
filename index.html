@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <main>
+    <section class="dashboard__grid">
+      <div class="dashboard__card--main">
+        <div class="dashboard__user flex">
+          <div class="dashboard__img">
+            <img src="images/image-jeremy.png" alt="">
+          </div>
+          <div class="dashboard__user-text">
+            <p class="text__blue">Report for</p>
+            <h1 class="text__white dashboard__name">Jeremy <br> Robson</h1>
+          </div>
+        </div>
+        <div class="dashboard__time-measurement flex">
+          <p class="time text__blue" data-index="0">Daily</p>
+          <p class="time text__blue picked" data-index="1">Weekly</p>
+          <p class="time text__blue" data-index="2">Monthly</p>
+        </div>
+      </div>
+      <div class="dashboard__card">
+        <div class="dashboard__decoration background__orange">
+          <div class="dashboard__card-icon">
+            <img src="images/icon-work.svg" alt="">
+          </div>
+        </div>
+        <div class="dashboard__data-card">
+          <div class="dashboard__data-title flex--rigid">
+            <h2 class="text__white dashboard__category">Work</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="dashboard__data flex">
+            <div class="dashboard__total--present text__white work-data"></div>
+            <p class="dashboard__total--last-week text__blue work-data">Last Week - </p>          
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__card">
+        <div class="dashboard__decoration background__blue">
+          <div class="dashboard__card-icon">
+            <img src="images/icon-play.svg" alt="">
+          </div>
+        </div>
+        <div class="dashboard__data-card">
+          <div class="dashboard__data-title flex--rigid">
+            <h2 class="text__white dashboard__category">Play</h2>
+            <img class="ellipsis"  src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="dashboard__data flex">
+            <div class="dashboard__total--present text__white play-data"></div>
+            <p class="dashboard__total--last-week text__blue play-data">Last Week - </p>          
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__card">
+        <div class="dashboard__decoration background__red">
+          <div class="dashboard__card-icon">
+            <img src="images/icon-study.svg" alt="">
+          </div>
+        </div>
+        <div class="dashboard__data-card">
+          <div class="dashboard__data-title flex--rigid">
+            <h2 class="text__white dashboard__category">Study</h2>
+            <img class="ellipsis"  src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="dashboard__data flex">
+            <div class="dashboard__total--present text__white study-data"></div>
+            <p class="dashboard__total--last-week text__blue study-data">Last Week - </p>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__card">
+        <div class="dashboard__decoration background__green">
+          <div class="dashboard__card-icon">
+            <img src="images/icon-exercise.svg" alt="">
+          </div>
+        </div>
+        <div class="dashboard__data-card">
+          <div class="dashboard__data-title flex--rigid">
+            <h2 class="text__white dashboard__category">Exercise</h2>
+            <img class="ellipsis"  src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="dashboard__data flex">
+            <div class="dashboard__total--present text__white exercise-data"></div>
+            <p class="dashboard__total--last-week text__blue exercise-data">Last Week - </p>          
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__card">
+        <div class="dashboard__decoration background__violet">
+          <div class="dashboard__card-icon">
+            <img src="images/icon-social.svg" alt="">
+          </div>
+        </div>
+        <div class="dashboard__data-card">
+          <div class="dashboard__data-title flex--rigid">
+            <h2 class="text__white dashboard__category">Social</h2>
+            <img class="ellipsis"  src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="dashboard__data flex">
+            <div class="dashboard__total--present text__white social-data"></div>
+            <p class="dashboard__total--last-week text__blue social-data">Last Week - </p>          
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__card">
+        <div class="dashboard__decoration background__yellow">
+          <div class="dashboard__card-icon">
+            <img src="images/icon-self-care.svg" alt="">
+          </div>
+        </div>
+        <div class="dashboard__data-card">
+          <div class="dashboard__data-title flex--rigid">
+            <h2 class="text__white dashboard__category">Self-Care</h2>
+            <img class="ellipsis"  src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="dashboard__data flex">
+            <div class="dashboard__total--present text__white care-data"></div>
+            <p class="dashboard__total--last-week text__blue care-data">Last Week - </p>          
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+<!-- 
+  Report for
+  Jeremy Robson
+
+  Daily
+  Weekly
+  Monthly
+
+  Work
+  5hrs ( daily )
+  Previous - 7hrs ( daily )
+  32hrs ( weekly )
+  Previous - 36hrs ( weekly )
+  103hrs ( monthly )
+  Previous - 128hrs ( monthly )
+
+  Play
+  1hr ( daily )
+  Previous - 2hrs ( daily )
+  10hrs ( weekly )
+  Previous - 8hrs ( weekly )
+  23hrs ( monthly )
+  Previous - 29hrs ( monthly )
+
+  Study
+  0hrs ( daily )
+  Previous - 1hr ( daily )
+  4hrs ( weekly )
+  Previous - 7hrs ( weekly )
+  13hrs ( monthly )
+  Previous - 19hrs ( monthly )
+
+  Exercise
+  1hr ( daily )
+  Previous - 1hr ( daily )
+  4hrs ( weekly )
+  Previous - 5hrs ( weekly )
+  11hrs ( monthly )
+  Previous - 18hrs ( monthly )
+
+  Social
+  1hr ( daily )
+  Previous - 3hrs ( daily )
+  5hrs ( weekly )
+  Previous - 10hrs ( weekly )
+  21hrs ( monthly )
+  Previous - 23hrs ( monthly )
+
+  Self Care
+  0hrs ( daily )
+  Previous - 1hr ( daily )
+  2hrs ( weekly )
+  Previous - 2hrs ( weekly )
+  7hrs ( monthly )
+  Previous - 11hrs ( monthly )
+
+-->
+
+</body>
+</html>
